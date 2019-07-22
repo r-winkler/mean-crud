@@ -8,7 +8,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
-    "start-server": "nodemon -r esm server.js",
+    "start-server": "cd server && nodemon -r esm server.js",
     "start-client": "ng serve --proxy-config proxy.config.json"
   },
   "private": true,
