@@ -1,0 +1,6 @@
+{
+  "dbConfig": {
+    "host": "localhost",
+    "database": "customermanager"
+  }
+}
