@@ -3,7 +3,6 @@ import mongoose from 'mongoose';
 import {dbConfig} from './configLoader';
 
 const connectionString = 'mongodb://' + dbConfig.host + '/' + dbConfig.database;
-
 let connection = null;
 
 class Database {

@@ -2,10 +2,7 @@
 import mongoose from 'mongoose';
 import Customer from '../models/customer';
 import State from '../models/state';
-import {dbConfig} from './configLoader';
 
-const connectionString = `mongodb://${dbConfig.host}/${dbConfig.database}`;
-let connection = null;
 
 class DBSeeder {
 

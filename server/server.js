@@ -1,6 +1,6 @@
 import express from 'express';
 // import exphbs from 'express-handlebars';
-// importhbsHelpers from 'handlebars-helpers';
+// import hbsHelpers from 'handlebars-helpers';
 // import hbsLayouts from 'handlebars-layouts';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
@@ -109,4 +109,4 @@ class Server {
 
 }
 
-let server = new Server();
+const server = new Server();
