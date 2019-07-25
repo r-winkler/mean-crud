@@ -2,14 +2,14 @@
 import mongoose from 'mongoose';
 import {dbConfig} from './configLoader';
 
-const connectionString = 'mongodb://' + dbConfig.host + '/' + dbConfig.database;
+// const connectionString = 'mongodb://' + dbConfig.host + '/' + dbConfig.database;
+const connectionString = "mongodb+srv://testUser:test123456@cluster0-528da.mongodb.net/test?retryWrites=true&w=majority";
 let connection = null;
 
 class Database {
 
     open(callback) {
         const options = {
-            useMongoClient: true,
             promiseLibrary: global.Promise
         };
         mongoose.connect(connectionString, options, (err) => {
